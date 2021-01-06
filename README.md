@@ -59,3 +59,18 @@ After adding the path to the liberaries dont forget to put  **,**  in the end eg
 - **Copy the tasks.json file and paste it into your .vscode**
 
 - **Make some edit in the make file**
+
+``` 
+Make file compiles the c code and convert it into hex file.
+Then upload the hex file to the AVR Microcontroller using AVRDUDE 
+
+```
+## Makefile edit
+
+**MAIN_APP = ~~blink_test~~**  # here you need to add the name of your .c file
+
+**MAIN_HEX_PATH = /home/pi/Documents/intrrepts/$(MAIN_APP).hex**  # here you need to add the the locatation where you need to create the hex file
+
+**LFLAGS = -Os -mmcu=~~atmega328p~~ -o** # here you need to give the name of the mcu (micro controller)that you are using
+
+**DUDEFLAGS += ~~/dev/ttyAMA0~~** #here you need to add port name in which you connect the usbasp programmer
