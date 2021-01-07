@@ -40,7 +40,7 @@ Yes i know we can program avr using raspberry pi using arduino IDE or arduino cl
 ~~~
  This will create a folder named .vscode in your work folder and in that a json file named c_cpp_properties.json 
  
-By default the c_cpp_properties.json contain the path to the gcc compailer but for avr micro controllers we need to compail using avr-gcc so that we need to add the path to the avr-gcc 
+By default the c_cpp_properties.json contain the path to the gcc compiler but for avr micro controllers we need to compail using avr-gcc so that we need to add the path to the avr-gcc 
 
 ~~~
 
@@ -48,16 +48,16 @@ By default the c_cpp_properties.json contain the path to the gcc compailer but f
 **"compilerPath": " **~~/usr/bin/avr-gcc~~** "**, - // paste your avr-gcc path here 
 
 ```
-If you use any additational liberaries you need to add the path to that librarye's 
+If you use any additational libraries you need to add the path to that librarie's 
 ```
 ```
 "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/lib/avr/include"
-                // here you need to include the path to all the liberaries that u used 
+                // here you need to include the path to all the libraries that u used 
             ],
 ```
-After adding the path to the liberaries dont forget to put  **,**  in the end eg: "/usr/lib/avr/include" , "/usr/lib/avr/serial" , "/usr/lib/avr/uart"
+After adding the path to the libraries dont forget to put  **,**  in the end eg: "/usr/lib/avr/include" , "/usr/lib/avr/serial" , "/usr/lib/avr/uart"
 
 <u> Except includepath and compailer path rest content you can copy from my c_cpp_properties.json </u>
 
@@ -81,7 +81,7 @@ Then upload the hex file to the AVR Microcontroller using AVRDUDE
 
 **MAIN_HEX_PATH = /home/pi/Documents/intrrepts/$(MAIN_APP).hex** 
  
-Here you need to add the the locatation where you need to create the hex file
+Here you need to add the the location where you need to create the hex file
 
 **LFLAGS = -Os -mmcu=~~atmega328p~~ -o** 
  Here you need to give the name of the mcu (micro controller)that you are using
