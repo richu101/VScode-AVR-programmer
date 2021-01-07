@@ -5,9 +5,8 @@
 
  Here i am using a raspberry pi
 
-Yes i know we can program avr using raspberry pi using arduino IDE or arduino cli . Using arduino platform i feel like spoon feeding
+Yes i know we can program avr using raspberry pi using arduino IDE or arduino cli . Using arduino platform i feel like spoon feeding .  
 
- 
 
 ------------
 
