@@ -1,17 +1,23 @@
 # VScode-AVR-programme
 
 
- How to program AVR microcontrollers using VS code
+ How to program AVR microcontrollers using VS code 
 
+ Here i am using a raspberry pi
+
+Yes i know we can program avr using raspberry pi using arduino IDE or arduino cli . Using arduino platform i feel like spoon feeding
+
+ 
 
 ------------
 
 **Hardware requirements**
-
+----
 - Any AVR microcontroller board
 - USB ASP programmer
 
 **Software requirements**
+---
 
 - Visual Studio code
 - avr-gcc
