@@ -27,7 +27,7 @@ Yes i know we can program avr using raspberry pi using arduino IDE or arduino cl
 
 - **Open VS code create a new work folder**
 
-- **create a** **.** **c or c++ file write your embeded program in it and save**
+- **create a c/c++ file write your embeded program in it and save**
 
 - **copy the Make file and paste it in your work folder**
 
