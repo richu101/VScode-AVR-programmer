@@ -21,13 +21,14 @@ Yes i know we can program avr using raspberry pi using arduino IDE or arduino cl
 - Visual Studio code
 - avr-gcc
 - avrdude
-- c/c++ extentation
+- c/c++ extension
 
-##  Let's start programming  
+##  **Let's start programming** 
+------ 
 
 - **Open VS code create a new work folder**
 
-- **create a c/c++ file write your embeded program in it and save**
+- **create a c/c++ file write your embedded program in it and save**
 
 - **copy the Make file and paste it in your work folder**
 
@@ -40,7 +41,7 @@ Yes i know we can program avr using raspberry pi using arduino IDE or arduino cl
 ~~~
  This will create a folder named .vscode in your work folder and in that a json file named c_cpp_properties.json 
  
-By default the c_cpp_properties.json contain the path to the gcc compiler but for avr micro controllers we need to compail using avr-gcc so that we need to add the path to the avr-gcc 
+By default the c_cpp_properties.json contain the path to the gcc compiler but for avr micro controllers we need to compil using avr-gcc so that we need to add the path to the avr-gcc 
 
 ~~~
 
@@ -48,7 +49,7 @@ By default the c_cpp_properties.json contain the path to the gcc compiler but fo
 **"compilerPath": " **~~/usr/bin/avr-gcc~~** "**, - // paste your avr-gcc path here 
 
 ```
-If you use any additational libraries you need to add the path to that librarie's 
+If you use any additational library you need to add the path to that library 
 ```
 ```
 "includePath": [
@@ -59,7 +60,7 @@ If you use any additational libraries you need to add the path to that librarie'
 ```
 After adding the path to the libraries dont forget to put  **,**  in the end eg: "/usr/lib/avr/include" , "/usr/lib/avr/serial" , "/usr/lib/avr/uart"
 
-<u> Except includepath and compailer path rest content you can copy from my c_cpp_properties.json </u>
+<u> Except includepath and compiler path rest content you can copy from my c_cpp_properties.json </u>
 
 - **Copy the tasks.json file and paste it into your .vscode**
 
