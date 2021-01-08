@@ -5,7 +5,7 @@
 
  Here i am using a raspberry pi
 
-Yes i know we can program avr using raspberry pi using arduino IDE or arduino cli . Using arduino platform i feel like spoon feeding .  
+Yes, I know we can program avr using raspberry pi using arduino IDE or arduino cli . Using arduino platform feels like spoon feeding .  
 
 
 ------------
@@ -49,7 +49,7 @@ By default the c_cpp_properties.json contain the path to the gcc compiler but fo
 **"compilerPath": " **~~/usr/bin/avr-gcc~~** "**, - // paste your avr-gcc path here 
 
 ```
-If you use any additional librarys you need to add the path to that library 
+If you use any additional libraries you need to add the path to that library 
 ```
 ```
 "includePath": [
