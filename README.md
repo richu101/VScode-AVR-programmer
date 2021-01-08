@@ -41,7 +41,7 @@ Yes i know we can program avr using raspberry pi using arduino IDE or arduino cl
 ~~~
  This will create a folder named .vscode in your work folder and in that a json file named c_cpp_properties.json 
  
-By default the c_cpp_properties.json contain the path to the gcc compiler but for avr micro controllers we need to compil using avr-gcc so that we need to add the path to the avr-gcc 
+By default the c_cpp_properties.json contain the path to the gcc compiler but for avr micro controllers we need to compile using avr-gcc so that we need to add the path to the avr-gcc 
 
 ~~~
 
@@ -49,13 +49,13 @@ By default the c_cpp_properties.json contain the path to the gcc compiler but fo
 **"compilerPath": " **~~/usr/bin/avr-gcc~~** "**, - // paste your avr-gcc path here 
 
 ```
-If you use any additational library you need to add the path to that library 
+If you use any additional librarys you need to add the path to that library 
 ```
 ```
 "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/lib/avr/include"
-                // here you need to include the path to all the libraries that u used 
+                // here you need to include the path to all the libraries that you used 
             ],
 ```
 After adding the path to the libraries dont forget to put  **,**  in the end eg: "/usr/lib/avr/include" , "/usr/lib/avr/serial" , "/usr/lib/avr/uart"
@@ -78,7 +78,8 @@ Then upload the hex file to the AVR Microcontroller using AVRDUDE
 
 
 **MAIN_APP = ~~blink_test~~**  
-# here you need to add the name of your .c file
+
+ here you need to add the name of your .c file
 
 **MAIN_HEX_PATH = /home/pi/Documents/intrrepts/$(MAIN_APP).hex** 
  
