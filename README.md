@@ -90,3 +90,5 @@ Here you need to add the the location where you need to create the hex file
 
 **DUDEFLAGS += ~~/dev/ttyAMA0~~** 
 Here you need to add port name in which you connect the usbasp programmer
+
+### uploading
