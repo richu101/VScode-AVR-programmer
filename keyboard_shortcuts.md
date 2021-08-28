@@ -1,3 +1,5 @@
 ## Some use ful keyboard shortcuts in vs code
 
-* ctrl + shift + i - mylty line entry
+* alt + shift + i - mylty line entry
+* ctrl + tab      - To move alon instance 
+* ctrl + `        - To open intragrated terminal
