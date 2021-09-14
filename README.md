@@ -1,30 +1,32 @@
 # VScode-AVR-programme
 
-
  How to program AVR microcontrollers using VS code 
 
  Here i am using a raspberry pi
 
 Yes, I know we can program avr using raspberry pi using arduino IDE or arduino cli . Using arduino platform feels like spoon feeding .  
 
+------------
+
+## Hardware requirements
 
 ------------
 
-**Hardware requirements**
-----
 - Any AVR microcontroller board
 - USB ASP programmer
 
-**Software requirements**
----
+## Software requirements
+
+------------
 
 - Visual Studio code
 - avr-gcc
 - avrdude
 - c/c++ extension
 
-##  **Let's start programming** 
------- 
+## Let's start programming
+
+------------
 
 - **Open VS code create a new work folder**
 
@@ -34,23 +36,23 @@ Yes, I know we can program avr using raspberry pi using arduino IDE or arduino c
 
 - **press ctrl + shift +p to open command palette**
 
-- **In command palette search for c/c++:Edit Configiratation(JSON) and select that** 
+- **In command palette search for c/c++:Edit Configiratation(JSON) and select that**
 
-    ## **c/c++:Edit Configiratation(JSON)**
+## c/c++:Edit Configiratation(JSON)
 
-~~~
- This will create a folder named .vscode in your work folder and in that a json file named c_cpp_properties.json 
+~~~ This will create a folder named .vscode in your work folder and in that a json file named c_cpp_properties.json
  
 By default the c_cpp_properties.json contain the path to the gcc compiler but for avr micro controllers we need to compile using avr-gcc so that we need to add the path to the avr-gcc 
 
 ~~~
 
 
-**"compilerPath": " **~~/usr/bin/avr-gcc~~** "**, - // paste your avr-gcc path here 
+**"compilerPath": "**~~/usr/bin/avr-gcc~~**"**, - // paste your avr-gcc path here 
 
 ```
-If you use any additional libraries you need to add the path to that library 
+If you use any additional libraries you need to add the path to that library
 ```
+
 ```
 "includePath": [
                 "${workspaceFolder}/**",
@@ -71,6 +73,7 @@ Make file compiles the c code and convert it into hex file.
 Then upload the hex file to the AVR Microcontroller using AVRDUDE 
 
 ```
+
 ## **Makefile edit**
 
 -----------
