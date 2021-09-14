@@ -1,12 +1,3 @@
-# VScode-AVR-programme
-
- **How to program AVR microcontrollers using VS code** 
-
-For Linux users you can check the Linux_RPI folder 
-
-
-------------
-
 ## Hardware requirements
 
 ------------
@@ -23,15 +14,15 @@ For Linux users you can check the Linux_RPI folder
 - avrdude
 - c/c++ extension
 
-## Let's start programming
+## Let's start Configuration
 
 ------------
 
 - **Open VS code create a new work folder**
 
-- **create a c/c++ file write your embedded program in it and save**
+- **create a c/c++ file (file with .C /.C++) write your embedded program in it and hit save**
 
-- **copy the Make file and paste it in your work folder**
+- **copy the [Make file](https://github.com/richu101/VScode-AVR-programmer/blob/main/Linux_RPI/Makefile) and paste it in your work folder**
 
 - **press ctrl + shift +p to open command palette**
 
@@ -68,9 +59,8 @@ After adding the path to the libraries dont forget to put  **,**  in the end eg:
 - **Make some edit in the make file**
 
 ``` 
-Make file compiles the c code and convert it into hex file.
+Make file is the file that  compiles the c code and convert it into hex file.
 Then upload the hex file to the AVR Microcontroller using AVRDUDE 
-
 ```
 
 ## **Makefile edit**
@@ -93,7 +83,7 @@ Here you need to add the the location where you need to create the hex file
 **DUDEFLAGS += ~~/dev/ttyAMA0~~** 
 Here you need to add port name in which you connect the usbasp programmer
 
-### Buils
+### Build and Upload code 
 
 * Press Ctrl + Shift + B
   
